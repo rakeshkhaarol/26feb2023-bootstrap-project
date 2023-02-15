@@ -1,0 +1,16 @@
+.r_tbdr{
+    border: 1px solid black;
+}
+header,footer{
+    background: #7734FA;
+    min-height: 65px;
+}
+footer{
+    background: #959596;
+    height: 470px;
+}
+main{
+    height: 1000px;
+    border: 1px solid brown;
+
+}

@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './main.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.querySelector('.container-fluid'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <header>header </header>
+    <main>
+      <div className="container h-100">
+          <div className="row h-100">
+            <aside className="right-aside col-2 h-100 r_tbdr">Right-aside</aside>
+            <section className="col-8 h-100 r_tbdr">section</section>
+            <aside className="left-aside col-2 h-100 r_tbdr">Left-aside</aside>
+          </div>
+      </div>
+    </main>
+    
+    <footer>footer</footer>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
